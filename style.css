@@ -1,0 +1,104 @@
+.header {
+    background-color: purple;
+    background-image: url(https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTqviotZz1WJGENo81Xrd8MzyFnOw3MFEl7LGa4T7GuMgYEqGPm);
+    height: 350px;
+    background-size: cover;
+    background-position: 0px 5%;
+}
+
+.container {
+	text-align: center;
+	max-width: 1400px;
+	margin: auto;
+	margin-top: -48px;
+	position: relative;
+	z-index: 2000;
+}
+
+.sidebar {
+	display: inline-block;
+	min-height: 200px;
+	width:25%;
+	vertical-align: top;
+	float: left;
+}
+
+.sidebar .icon-wrap{
+
+	margin-bottom: 20px;
+	border: 5px solid white;
+	background: white;
+	display: inline-block;
+	width: 96px;
+	height: 96px;
+	overflow: hidden;
+	border-radius: 50%;
+
+}
+
+.sidebar .icon-wrap img {
+
+	display: inline-block;
+	width: 96px;
+	height: 96px;
+	overflow: hidden;
+	border-radius: 50%;
+}
+
+.right-column {
+	display: inline-block;
+	min-height: 1000px;
+	width: 65%;
+	vertical-align: top;
+	margin-top: 105px;
+	margin-left: 45px;
+}
+
+.icon-wrap {
+margin-bottom: 20px;
+border: 5px solid white;
+background: white;
+
+}
+
+h1.blogTitle {
+	font-weight: 700;
+	line-height: 1.4;
+	font-size: 40px;
+	color: #333333;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.right-column > p {
+
+	line-height: 26px;
+	font-family: 'PT Serif', serif;
+	font-size: 17px;
+	color: #666666;
+}
+
+.sidebar > h1 {
+
+	font-size: 16px;
+	line-height: 19px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 1.2px;
+	font-family: 'Open Sans', sans-serif;
+	color: #666666;
+	padding-left: 30px;
+}
+
+.sidebar > p {
+
+	line-height: 26px;
+	font-family: 'PT Serif', serif;
+	color: #666666;
+	text-align: -webkit-auto;
+	padding-left: 45px;
+}
+
+p.emph {
+
+	color: #666666;
+}

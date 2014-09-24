@@ -1,6 +1,6 @@
 .header {
     background-color: purple;
-    background-image: url(https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTqviotZz1WJGENo81Xrd8MzyFnOw3MFEl7LGa4T7GuMgYEqGPm);
+    background-image: url(http://quantaya-gaming.org/wp-content/uploads/2014/05/html-code.jpg);
     height: 350px;
     background-size: cover;
     background-position: 0px 5%;
@@ -18,9 +18,11 @@
 .sidebar {
 	display: inline-block;
 	min-height: 200px;
-	width:25%;
+	width:22%;
 	vertical-align: top;
 	float: left;
+	margin-right: 20px;
+	margin-left: -100px;
 }
 
 .sidebar .icon-wrap{
@@ -45,13 +47,24 @@
 	border-radius: 50%;
 }
 
-.right-column {
+.center-column {
 	display: inline-block;
 	min-height: 1000px;
-	width: 65%;
+	width: 50%;
 	vertical-align: top;
 	margin-top: 105px;
 	margin-left: 45px;
+	float: left;
+}
+
+.far-right-column {
+	display: inline-block;
+	min-height: 1000px;
+	width: 15%;
+	vertical-align: top;
+	margin-top: 315px;
+	margin-left: 100px;
+
 }
 
 .icon-wrap {
@@ -69,12 +82,17 @@ h1.blogTitle {
 	font-family: 'Open Sans', sans-serif;
 }
 
-.right-column > p {
+.center-column > p {
 
 	line-height: 26px;
 	font-family: 'PT Serif', serif;
 	font-size: 17px;
 	color: #666666;
+}
+.center-column > img {
+
+	max-width: 844px;
+	width: 100%;
 }
 
 .sidebar > h1 {
@@ -96,9 +114,32 @@ h1.blogTitle {
 	color: #666666;
 	text-align: -webkit-auto;
 	padding-left: 45px;
+	color: rgb(170, 170, 170);
 }
 
 p.emph {
 
 	color: #666666;
+}
+
+.far-right-column > h1 {
+
+	font-size: 16px;
+	line-height: 19px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 1.2px;
+	font-family: 'Open Sans', sans-serif;
+	color: #666666;
+	padding-left: 0px;
+}
+
+.far-right-column > p {
+
+	line-height: 26px;
+	font-family: 'PT Serif', serif;
+	color: #666666;
+	text-align: -webkit-auto;
+	padding-left: 0px;
+	color: rgb(170, 170, 170);
 }

@@ -22,7 +22,6 @@
 	vertical-align: top;
 	float: left;
 	margin-right: 20px;
-	margin-left: -100px;
 }
 
 .sidebar .icon-wrap{
@@ -62,8 +61,8 @@
 	min-height: 1000px;
 	width: 15%;
 	vertical-align: top;
-	margin-top: 315px;
-	margin-left: 100px;
+	margin-top: 300px;
+	margin-left: 40px;
 
 }
 

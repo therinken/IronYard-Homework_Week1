@@ -1,0 +1,108 @@
+@fontface {
+	font-family: ecoico;
+	src: url(./ecoico.woff) format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.main {
+	width: 90%;
+	max-width: 69em;
+	margin: 0 auto;
+	padding: 0 1.875em 3.125em 1.875em;
+}
+.timeline {
+	margin: 30px 0 0 0;
+	padding: 0;
+	list-style: none;
+	position: relative;
+}
+.timeline > li {
+	position: relative;
+}
+.timeline > li .time {
+	display: block;
+	padding-right: 100px;
+	position: absolute;
+}
+.timeline > li .time span {
+	display: block;
+	text-align: right;
+}
+.timeline > li .time span:first-child {
+	font-size: 0.9em;
+	color: #bdd0db;
+}
+.timeline > li .time span:last-child {
+	font-size: 2.9em;
+	color: #3594cb;
+}
+.timeline > li:nth-child(odd) .time span:last-child {
+	color: #6cbfee;
+}
+.timeline > li .label {
+	margin: 0 0 15px 25%;
+	background: #3594cb;
+	color: #fff;
+	padding: 2em;
+	font-size: 1.2em;
+	font-weight: 300;
+	line-height: 1.4;
+	position: relative;
+	border-radius: 5px;
+}
+
+.timeline > li:nth-child(odd) .label {
+	background: #6cbfee;
+}
+
+.timeline > li .label h2 { 
+	margin-top: 0px;
+	padding: 0 0 10px 0;
+	border-bottom: 1px solid rgba(255,255,255,0.4);
+}
+
+.timeline > li:nth-child(odd) .label:after {
+	border-right-color: #6cbfee;
+}
+.timeline > li .icon {
+	width: 40px;
+	height: 40px;
+	font-family: 'ecoico';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	font-size: 1.4em;
+	line-height: 40px;
+	-webkit-font-smoothing: antialiased;
+	position: absolute;
+	color: #fff;
+	background: #46a4da;
+	border-radius: 50%;
+	box-shadow: 0 0 0 8px #afdcf8;
+	text-align: center;
+	left: 20%;
+	top: 0;
+	margin: 0 0 0 -25px;
+}
+
+.icon-phone:before {
+	content: "\e000";
+}
+
+.icon-screen:before {
+	content: "\e001";
+}
+
+.icon-mail:before {
+	content: "\e002";
+}
+
+.icon-earth:before {
+	content: "\e003";
+}
+* .icon:before {
+	box-sizing: border-box;
+}

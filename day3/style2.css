@@ -1,6 +1,6 @@
 @fontface {
 	font-family: ecoico;
-	src: url(./ecoico.woff) format('woff');
+	src: url(./ecoico.woff);
 	font-weight: normal;
 	font-style: normal;
 }
@@ -16,6 +16,16 @@
 	padding: 0;
 	list-style: none;
 	position: relative;
+}
+.timeline:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 10px;
+	background: #afdcf8;
+	left: 20%;
+	margin-left: -10px;
 }
 .timeline > li {
 	position: relative;
@@ -61,6 +71,18 @@
 	padding: 0 0 10px 0;
 	border-bottom: 1px solid rgba(255,255,255,0.4);
 }
+.timeline > li .label:after {
+	right: 100%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-right-color: #3594cb;
+	border-width: 10px;
+	top: 10px;
+}
 
 .timeline > li:nth-child(odd) .label:after {
 	border-right-color: #6cbfee;
@@ -89,7 +111,7 @@
 }
 
 .icon-phone:before {
-	content: "\e000";
+	content: "&spades";
 }
 
 .icon-screen:before {
@@ -102,7 +124,4 @@
 
 .icon-earth:before {
 	content: "\e003";
-}
-* .icon:before {
-	box-sizing: border-box;
 }

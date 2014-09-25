@@ -52,7 +52,7 @@ body {
 	color: #F8B482;
 }
 .boxline > li .timely span:last-child {
-	font-size: 2.9em;
+	font-size: 2.0em;
 	color: #67C7D5;
 }
 .boxline > li:nth-child(odd) .timely span:last-child {
@@ -87,8 +87,8 @@ body {
 	width: 0;
 	position: absolute;
 	border-right-color: #67C7D5;
-	border-width: 10px;
-	top: 10px;
+	border-width: 15px;
+	top: 5px;
 }
 
 .boxline > li:nth-child(odd) .infobox:after {

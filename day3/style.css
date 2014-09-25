@@ -19,13 +19,13 @@ body {
 	margin: 0 auto;
 	padding: 0 1.875em 3.125em 1.875em;
 }
-.timeline {
+.boxline {
 	margin: 30px 0 0 0;
 	padding: 0;
 	list-style: none;
 	position: relative;
 }
-.timeline:before {
+.boxline:before {
 	content: '';
 	position: absolute;
 	top: 0;
@@ -35,30 +35,30 @@ body {
 	left: 20%;
 	margin-left: -10px;
 }
-.timeline > li {
+.boxline > li {
 	position: relative;
 }
-.timeline > li .timely {
+.boxline > li .timely {
 	display: block;
 	padding-right: 100px;
 	position: absolute;
 }
-.timeline > li .timely span {
+.boxline > li .timely span {
 	display: block;
 	text-align: right;
 }
-.timeline > li .timely span:first-child {
+.boxline > li .timely span:first-child {
 	font-size: 0.9em;
 	color: #F8B482;
 }
-.timeline > li .timely span:last-child {
+.boxline > li .timely span:last-child {
 	font-size: 2.9em;
 	color: #67C7D5;
 }
-.timeline > li:nth-child(odd) .timely span:last-child {
+.boxline > li:nth-child(odd) .timely span:last-child {
 	color: #F8EF82;
 }
-.timeline > li .infobox {
+.boxline > li .infobox {
 	margin: 0 0 15px 25%;
 	background: #EE757C;
 	color: #fff;
@@ -70,16 +70,16 @@ body {
 	border-radius: 5px;
 }
 
-.timeline > li:nth-child(odd) .infobox {
+.boxline > li:nth-child(odd) .infobox {
 	background: #67C7D5;
 }
 
-.timeline > li .infobox h2 { 
+.boxline > li .infobox h2 { 
 	margin-top: 0px;
 	padding: 0 0 10px 0;
 	border-bottom: 1px solid rgba(255,255,255,0.4);
 }
-.timeline > li .infobox:after {
+.boxline > li .infobox:after {
 	right: 100%;
 	border: solid transparent;
 	content: " ";
@@ -91,10 +91,10 @@ body {
 	top: 10px;
 }
 
-.timeline > li:nth-child(odd) .infobox:after {
+.boxline > li:nth-child(odd) .infobox:after {
 	border-right-color: #EE757C;
 }
-.timeline > li .icon {
+.boxline > li .icon {
 	width: 40px;
 	height: 40px;
 	font-family: 'ecoico';

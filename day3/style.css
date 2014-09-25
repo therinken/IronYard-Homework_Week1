@@ -7,18 +7,24 @@
 	font-weight: normal;
 	font-style: normal;
 }
+
 body {
     font-family: Arial, sans-serif;
     color: #47a3da;
 }
 
-
+/* a top level box wrapping everything and 
+forcing the nested elements within into a frame 
+*/
 .main {
 	width: 90%;
 	max-width: 69em;
 	margin: 0 auto;
 	padding: 0 1.875em 3.125em 1.875em;
 }
+/* an unordered list wrapping a series of 
+lists
+*/
 .boxline {
 	margin: 30px 0 0 0;
 	padding: 0;
@@ -111,6 +117,12 @@ body {
 	top: 0;
 	margin: 0 0 0 -25px;
 }
+/* the :before pseudo selector focussed on 
+an icon/ASCII character class within the 
+'icon' class nested inside the 'timely' 
+list class... causing the icon to be absolutely 
+positioned inside the box and display the
+special font*/
 
 .phone:before {
 	content: "\e009";

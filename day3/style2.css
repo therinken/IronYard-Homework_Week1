@@ -1,9 +1,17 @@
 @fontface {
-	font-family: ecoico;
-	src: url(./ecoico.woff);
+	font-family: 'ecoico';
+	src:url('./fonts/ecoico.eot') format('embedded-opentype'),
+		url('./fonts/ecoico.woff') format('woff'),
+		url('./fonts/ecoico.ttf') format('truetype'),
+		url('./fonts/ecoico.svg') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
+body {
+    font-family: Arial, sans-serif;
+    color: #47a3da;
+}
+
 
 .main {
 	width: 90%;
@@ -23,36 +31,36 @@
 	top: 0;
 	bottom: 0;
 	width: 10px;
-	background: #afdcf8;
+	background: rgba(237,237,173,0.6);
 	left: 20%;
 	margin-left: -10px;
 }
 .timeline > li {
 	position: relative;
 }
-.timeline > li .time {
+.timeline > li .timely {
 	display: block;
 	padding-right: 100px;
 	position: absolute;
 }
-.timeline > li .time span {
+.timeline > li .timely span {
 	display: block;
 	text-align: right;
 }
-.timeline > li .time span:first-child {
+.timeline > li .timely span:first-child {
 	font-size: 0.9em;
-	color: #bdd0db;
+	color: #F8B482;
 }
-.timeline > li .time span:last-child {
+.timeline > li .timely span:last-child {
 	font-size: 2.9em;
-	color: #3594cb;
+	color: #67C7D5;
 }
-.timeline > li:nth-child(odd) .time span:last-child {
-	color: #6cbfee;
+.timeline > li:nth-child(odd) .timely span:last-child {
+	color: #F8EF82;
 }
-.timeline > li .label {
+.timeline > li .infobox {
 	margin: 0 0 15px 25%;
-	background: #3594cb;
+	background: #EE757C;
 	color: #fff;
 	padding: 2em;
 	font-size: 1.2em;
@@ -62,66 +70,56 @@
 	border-radius: 5px;
 }
 
-.timeline > li:nth-child(odd) .label {
-	background: #6cbfee;
+.timeline > li:nth-child(odd) .infobox {
+	background: #67C7D5;
 }
 
-.timeline > li .label h2 { 
+.timeline > li .infobox h2 { 
 	margin-top: 0px;
 	padding: 0 0 10px 0;
 	border-bottom: 1px solid rgba(255,255,255,0.4);
 }
-.timeline > li .label:after {
+.timeline > li .infobox:after {
 	right: 100%;
 	border: solid transparent;
 	content: " ";
 	height: 0;
 	width: 0;
 	position: absolute;
-	pointer-events: none;
-	border-right-color: #3594cb;
+	border-right-color: #67C7D5;
 	border-width: 10px;
 	top: 10px;
 }
 
-.timeline > li:nth-child(odd) .label:after {
-	border-right-color: #6cbfee;
+.timeline > li:nth-child(odd) .infobox:after {
+	border-right-color: #EE757C;
 }
 .timeline > li .icon {
 	width: 40px;
 	height: 40px;
 	font-family: 'ecoico';
-	speak: none;
-	font-style: normal;
-	font-weight: normal;
-	font-variant: normal;
 	text-transform: none;
 	font-size: 1.4em;
 	line-height: 40px;
-	-webkit-font-smoothing: antialiased;
 	position: absolute;
 	color: #fff;
-	background: #46a4da;
+	background: #F8B482;
 	border-radius: 50%;
-	box-shadow: 0 0 0 8px #afdcf8;
+	box-shadow: 0 0 0 8px #67C7D5;
 	text-align: center;
 	left: 20%;
 	top: 0;
 	margin: 0 0 0 -25px;
 }
 
-.icon-phone:before {
-	content: "&spades";
+.phone:before {
+	content: "\e009";
 }
 
-.icon-screen:before {
+.chat:before {
 	content: "\e001";
 }
 
-.icon-mail:before {
+.drawer:before {
 	content: "\e002";
-}
-
-.icon-earth:before {
-	content: "\e003";
 }

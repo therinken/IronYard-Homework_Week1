@@ -1,0 +1,147 @@
+body {
+  background: #5CA4D7;
+  color: #888;
+  font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+/*
+da grid
+*/
+.container,
+.grid {
+  margin: 0 auto;
+  width: 960px;
+}
+.container {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.grid,
+.col-1-3 {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.col-1-3 {
+  width: 32%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+/*
+Clearfix
+*/
+
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  clear: both;
+  *zoom: 1;
+}
+
+/*
+  Row Styling
+*/
+
+.row {
+  background: #5CA4D7;
+  padding: 66px 0 44px 0;
+  min-width: 960px;
+}
+/*
+  Typography
+*/
+
+h1, h2, h3, h4 {
+  color: #648880;
+}
+h1, h3, h4, h5, p {
+  margin-bottom: 22px;
+}
+h1 {
+  font-size: 36px;
+  line-height: 44px;
+}
+h2 {
+  font-size: 24px;
+  line-height: 44px;
+}
+h3 {
+  font-size: 21px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  color: #a9b2b9;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+strong {
+  font-weight: 400;
+}
+cite,
+em {
+  font-style: italic;
+}
+/*
+Form Stylee
+*/
+form {
+  margin-bottom: 22px;
+}
+input,
+select,
+textarea {
+  font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.group {
+	border: none;
+}
+.group label {
+  color: #fff;
+  cursor: pointer;
+  font-weight: 400;
+}
+.group input,
+.group select,
+.group textarea {
+  border: 1px solid #fff;
+  color: #fff;
+  display: block;
+  margin: 5px 0 27px 0;
+  padding: 5px 8px;
+  background-color: #5CA4D7
+
+}
+.group input,
+.group textarea {
+  width: 100%;
+}
+.group select {
+  width: 100%;
+}
+.group textarea {
+  height: 78px;
+}
+.group input.placeholder {
+	color: white;
+}
+#grad {
+  background: -webkit-linear-gradient(red, blue); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(red, blue); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(red, blue); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(red, blue); /* Standard syntax */
+}

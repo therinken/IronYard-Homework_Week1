@@ -1,8 +1,3 @@
-body {
-  background: #5CA4D7;
-  color: #888;
-  font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
 *,
 *:before,
 *:after {
@@ -10,9 +5,11 @@ body {
      -moz-box-sizing: border-box;
           box-sizing: border-box;
 }
+
 /*
 da grid
 */
+
 .container,
 .grid {
   margin: 0 auto;

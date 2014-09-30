@@ -1,163 +1,162 @@
-@font-face {
-  font-family: 'icomoon';
-  src:url('../fonts/icomoon/icomoon.eot'),
-      url('../fonts/icomoon/icomoon.woff'),
-      url('../fonts/icomoon/icomoon.ttf'),
-      url('../fonts/icomoon/icomoon.svg');
-  font-weight: normal;
-  font-style: normal;
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+/**
+ * grid!!!!
+ */
+ .grid {
+    font-size: 0px;
+    text-align: justify;
+}
+.grid > * {
+    display: inline-block;
+    font-size: large;
+}
+.grid::after {
+    display: inline-block;
+    width: 100%;
+    content:"";
+}
+/**
+ * grid sizes
+ */
+ @media screen and (min-width: 480px) {
+    .min480 > * {
+        width: 47%;
+    }
+}
+@media screen and (min-width: 800px) {
+    .min800 > * {
+        width: 30%;
+    }
+}
+.shirts > * {
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 2px solid #5CA4D7;
+    margin-bottom: 4.5em;
+    position: relative;
+    perspective: 800px;
 }
 
-.container {
-	position: relative;
-	width: 100%;
+ .shirts > * > img {
+    display: block;
+    width: 100%;
+    transition: transform .5s ease;
+}
+.shirts > * > img:nth-of-type(1) {
+    backface-visibility: hidden;
+    transform: rotateY(0deg) translateZ(0);
+}
+.shirts > * > img:nth-of-type(2) {
+    position: absolute;
+    top:0;
+    left:0;
+    backface-visibility: hidden;
+    transform: rotateY(180deg) translateZ(0);
+}
+.shirts input[type="checkbox"]::before {}
+ .shirts input[type="checkbox"] {
+    position: absolute;
+    margin: 0;
+    top:0;
+    right: 0;
+    width: 3.5em;
+    height: 3.5em;
+    z-index: 1;
+    outline: 0 !important;
+}
+.shirts input[type="checkbox"]:hover {
+    cursor: pointer;
+}
+.shirts input[type="checkbox"]::after {
+    content: "\f021";
+    font: 25px/1 FontAwesome;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-left: 2px solid #5CA4D7;
+    border-bottom: 2px solid #5CA4D7;
+    line-height: 1.6em;
+    color: #5CA4D7;
+    text-align: center;
+    transition: all .5s ease;
+}
+.shirts input[type="checkbox"]:checked::after {
+    background-color: #5CA4D7;
+    color: white;
+}
+.shirts input[type="checkbox"]:checked ~ img:nth-of-type(1) {
+    transform: rotateY(180deg);
+}
+.shirts input[type="checkbox"]:checked ~ img:nth-of-type(2) {
+    transform: rotateY(0deg);
+}
+/**
+ * options
+ */
+ .shirts .options {
+    display: block;
+    overflow: auto;
+    position: relative;
+}
+.shirts .options > * {
+    display: block;
+    float:left;
+    width: 20%;
+    position: relative;
+}
+.shirts .options > *:last-child::after {
+    border-right-width: 0px;
+}
+.shirts .options > *::after {
+    content:"";
+    display: block;
+    padding-top: 100%;
+    border-top: 2px solid #5CA4D7;
+    border-right: 2px solid #5CA4D7;
+}
+.shirts .options .fa {
+    text-align: center;
+    font-size: 1.5em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) translateZ(0);
+}
+.shirts .options .fa::after {
 }
 
-.container ul,
-.container li {
-	padding: 0;
-	margin: 0;
-	list-style-type: none;
+.shirts .options > span {
+    color: #5CA4D7;
+    transition: all .125s 0s ease;
 }
-.bigflex{
-  padding: 0;
-  margin: 0;
-
-  display: -webkit-flex;
-  	display: -moz-flex;
-  	display: -ms-flex;
-  	display: flex;
-  	-webkit-flex-flow: row wrap;
-  	-moz-flex-flow: row wrap;
-  	-ms-flex-flow: row wrap;
-  	flex-flow: row wrap;
-  	-webkit-justify-content: space-around;
-  	-moz-justify-content: space-around;
-  	-ms-justify-content: space-around;
-  	-webkit-justify-content: space-around;
+.shirts .options > span:hover {
+    cursor: pointer;
 }
-.bigflex > li {
-	display: block;
-	
+.shirts .options > span:hover {
+    color: white;
+    background-color: #5CA4D7;
 }
-
-.productbox {
-  position: relative;
-  padding: 0px;
-  width: 250px;
-  height: 275px;
-  margin-top: 10px;
-  color: white;
-  text-align: center;
-  border: 3px solid #5CA4D7;
+/**
+ * label
+ */
+ .shirts > * > h6 {
+    position: absolute;
+    top: 100%;
+    padding-top: 1em;
+    overflow: auto;
+    left: 0;
+    width: 100%;
+    color: #5CA4D7;
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+    overflow: hidden;
 }
-.content {
-  border: 3px solid #47a3da;
-  position: relative;
-}
-
-.upperbox {
-		right: 0px;
-		top: 0px;
-		text-align: center;
-	  color: transparent;
-	  cursor: pointer;
-	  font-size: 0;
-	  z-index: 100;
-	  display: block;
-	  height: 46px;
-	  width: 46px;
-	  position: absolute;
-	  vertical-align: top;
-	  border-left: 2px solid rgba(92,164,215,1);
-	  border-bottom: 2px solid rgba(92,164,215,1);
-  }
-.item {
-  width: 100%;
-  position: relative;
-  padding: 1.3em;
-}
-.item img:first-child {
-  position: relative;
-  display: block;
-  margin-left: 8px;
-  margin-top: 1px;
-  max-width: 100%;
-}
-.item img:nth-child(2) {
-  position: absolute;
-  top: 10%;
-  left: 10%;
-}
-.littleflex {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-
-  
-  -ms-box-orient: horizontal;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -moz-flex;
-  display: -webkit-flex;
-  display: flex;
-    
-  -webkit-justify-content: space-around;
-  justify-content: space-around;
-  -webkit-flex-flow: row wrap;
-  flex-flow: row wrap;
-  -webkit-align-items: stretch;
-  align-items: stretch;
-}
-
-.innerbox:nth-of-type(1) { flex-grow: 1; }
-.innerbox:nth-of-type(2) { flex-grow: 1; }
-.innerbox:nth-of-type(3) { flex-grow: 1; }
-.innerbox:nth-of-type(4) { flex-grow: 1; }
-.innerbox:nth-of-type(5) { flex-grow: 1; }
-
-.innerbox {
-  
-  background: white;
-  line-height: 50px;
-  color: white;
-  font-weight: bold;
-  font-size: 1em;
-  text-align: center;
-  margin-top: 47px;
-}
-.innerbox:nth-of-type(odd) {
-  border-top: 3px solid rgba(92,164,215,1);
-}
-.innerbox:nth-of-type(even) {
-  border-top: 3px solid rgba(92,164,215,1);
-  border-left: 3px solid rgba(92,164,215,1);
-  border-right:  3px solid rgba(92,164,215,1); 
-}
-* :after, * :before {
-	box-sizing: border-box;
-}
-.dscript:after {
-  clear: both;
-}
-.dscript:before,
-.dscript:after {
-    content:" ";
-    display: table;
-}
-.dscript h3
-.dscript span {
-  float: left;
-  width: 50%;
-  font-size: 1.8em;
-  padding: 10px 5px;
-  margin: 0;
-}
-.dscript h3 {
-  font-weight: 300;
-}
-.dscript span {
-  font-weight: 700;
-  text-align: right;
+.shirts > * > h6 > strong {
+    float: right;
 }
